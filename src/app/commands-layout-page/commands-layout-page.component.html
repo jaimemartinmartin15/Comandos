@@ -4,7 +4,7 @@
   <a #responsiveLayoutLeftMenu responsive-layout-left-menu *ngFor="let command of COMMANDS" [routerLink]="[command.url]"
     routerLinkActive="menu-section-active">{{command.display}}</a>
 
-  <a #responsiveLayoutContentHeader responsive-layout-content-header routerLink="['/comandos/']"
+  <a #responsiveLayoutContentHeader responsive-layout-content-header routerLink="['/']"
     class="back-to-menu-link" *ngIf="!isShowingLeftMenu">⬅️ Volver a la lista de comandos</a>
 
   <router-outlet #responsiveLayoutMainContent responsive-layout-main-content></router-outlet>
