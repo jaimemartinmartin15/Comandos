@@ -1,18 +1,17 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
+import { SeoService } from './services/seo.service';
 
 @Component({
   selector: 'app-root',
   standalone: true,
   imports: [CommonModule, RouterOutlet],
-  template: `
-    <h1>Welcome to {{title}}!</h1>
-
-    <router-outlet></router-outlet>
-  `,
-  styles: [],
+  template: `<router-outlet></router-outlet>`,
+  styles: [':host{ display: block; }'],
 })
 export class AppComponent {
-  title = 'commands';
+  public constructor(readonly seoService: SeoService) {
+    seoService.listenNavigationEvents();
+  }
 }

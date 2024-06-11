@@ -50,8 +50,17 @@
             "tsConfig": "tsconfig.app.json",
             "inlineStyleLanguage": "scss",
             "assets": [
-              "src/favicon.ico",
-              "src/assets"
+              "src/favicons",
+              {
+                "glob": "**/*",
+                "input": "src/app/nmap/assets",
+                "output": "/assets/nmap/"
+              },
+              {
+                "glob": "**/*",
+                "input": "src/app/cd/assets",
+                "output": "/assets/cd/"
+              }
             ],
             "styles": [
               "src/styles.scss"
