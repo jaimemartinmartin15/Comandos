@@ -54,7 +54,7 @@
             "tsConfig": "tsconfig.app.json",
             "inlineStyleLanguage": "scss",
             "assets": [
-              "src/favicons",
+              "src/assets/favicons",
               {
                 "glob": "**/*",
                 "input": "src/app/commands-layout/nmap/assets",
