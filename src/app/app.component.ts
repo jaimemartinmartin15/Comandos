@@ -1,18 +1,20 @@
-import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { ModalsContainerDirective, SeoService } from '@jaimemartinmartin15/jei-devkit-angular-shared';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet],
+  imports: [CommonModule, RouterOutlet, ModalsContainerDirective],
   template: `
-    <h1>Welcome to {{title}}!</h1>
-
     <router-outlet></router-outlet>
+    <ng-container appModalsContainer></ng-container>
   `,
-  styles: [],
+  styles: [':host{ display: block; }'],
 })
 export class AppComponent {
-  title = 'commands';
+  public constructor(readonly seoService: SeoService) {
+    seoService.listenNavigationEvents();
+  }
 }

@@ -1,0 +1,44 @@
+@import "@jaimemartinmartin15/jei-devkit-angular-shared/styles/colors";
+
+:host {
+  display: block;
+  padding-bottom: 20px;
+}
+
+a {
+  display: block;
+  margin: 15px 0 0 5px;
+  text-decoration: none;
+  color: black;
+  transition: 0.5s;
+  line-height: 25px;
+
+  &:first-of-type:not(.back-to-menu-link) {
+    margin-top: 30px;
+  }
+
+  &:hover:not(.menu-section-active) {
+    font-size: 1.15em;
+
+    &::after {
+      content: "➡️";
+      margin-left: 5px;
+    }
+  }
+}
+
+.menu-section-active {
+  color: $color-orange;
+  font-size: 1.3em;
+}
+
+// 900px as in ResponsiveLayoutComponent
+@media (max-width: 900px) {
+  .back-to-menu-link {
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+    padding: 40px 20px 0 20px;
+  }
+}
