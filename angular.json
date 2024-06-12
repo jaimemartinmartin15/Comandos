@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "commands": {
+    "comandos": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -44,7 +44,7 @@
             "stylePreprocessorOptions": {
               "includePaths": ["./node_modules"]
             },
-            "outputPath": "dist/commands",
+            "outputPath": "dist/comandos",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "namedChunks": true,
@@ -99,10 +99,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "commands:build:production"
+              "buildTarget": "comandos:build:production"
             },
             "development": {
-              "buildTarget": "commands:build:development"
+              "buildTarget": "comandos:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -110,7 +110,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "buildTarget": "commands:build"
+            "buildTarget": "comandos:build"
           }
         }
       }
