@@ -57,12 +57,12 @@
               "src/favicons",
               {
                 "glob": "**/*",
-                "input": "src/app/nmap/assets",
+                "input": "src/app/commands-layout/nmap/assets",
                 "output": "/assets/nmap/"
               },
               {
                 "glob": "**/*",
-                "input": "src/app/cd/assets",
+                "input": "src/app/commands-layout/cd/assets",
                 "output": "/assets/cd/"
               }
             ],
