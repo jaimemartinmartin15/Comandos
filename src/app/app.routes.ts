@@ -8,7 +8,7 @@ export const routes: Routes = [
   },
   {
     path: '',
-    loadChildren: () => import('./commands-layout-page/commands-layout-page.routes').then(m => m.COMMANDS_LAYOUT_PAGE_ROUTES),
+    loadChildren: () => import('./commands-layout/commands-layout.routes').then(m => m.COMMANDS_LAYOUT_ROUTES),
   },
   {
     path: '**',

@@ -1,7 +1,7 @@
 import { Route } from '@angular/router';
-import { CommandsLayoutPageComponent } from './commands-layout-page.component';
+import { CommandsLayoutPageComponent } from './commands-layout.component';
 
-export const COMMANDS_LAYOUT_PAGE_ROUTES: Route[] = [
+export const COMMANDS_LAYOUT_ROUTES: Route[] = [
   {
     path: '',
     component: CommandsLayoutPageComponent,

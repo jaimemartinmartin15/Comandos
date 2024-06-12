@@ -5,11 +5,11 @@ import { HeaderPrintComponent, ResponsiveLayoutComponent } from '@jaimemartinmar
 import { COMMANDS_LIST } from '../menu/menu-links';
 
 @Component({
-  selector: 'app-commands-layout-page',
+  selector: 'app-commands-layout',
   standalone: true,
   imports: [CommonModule, RouterOutlet, RouterLink, ResponsiveLayoutComponent, HeaderPrintComponent],
-  templateUrl: './commands-layout-page.component.html',
-  styleUrls: ['./commands-layout-page.component.scss'],
+  templateUrl: './commands-layout.component.html',
+  styleUrls: ['./commands-layout.component.scss'],
 })
 export class CommandsLayoutPageComponent {
   public isShowingLeftMenu: boolean = false;
