@@ -1,14 +1,13 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { RouterLink, RouterOutlet } from '@angular/router';
-import { HeaderPrintModule } from '../components/header-print/header-print.module';
-import { ResponsiveLayoutModule } from '../components/responsive-layout/responsive-layout.module';
+import { HeaderPrintComponent, ResponsiveLayoutComponent } from '@jaimemartinmartin15/jei-devkit-angular-shared';
 import { COMMANDS_LIST } from '../menu/menu-links';
 
 @Component({
   selector: 'app-commands-layout-page',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, RouterLink, ResponsiveLayoutModule, HeaderPrintModule],
+  imports: [CommonModule, RouterOutlet, RouterLink, ResponsiveLayoutComponent, HeaderPrintComponent],
   templateUrl: './commands-layout-page.component.html',
   styleUrls: ['./commands-layout-page.component.scss'],
 })

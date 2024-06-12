@@ -1,13 +1,16 @@
-import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { SeoService } from './services/seo.service';
+import { ModalsContainerDirective, SeoService } from '@jaimemartinmartin15/jei-devkit-angular-shared';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet],
-  template: `<router-outlet></router-outlet>`,
+  imports: [CommonModule, RouterOutlet, ModalsContainerDirective],
+  template: `
+    <router-outlet></router-outlet>
+    <ng-container appModalsContainer></ng-container>
+  `,
   styles: [':host{ display: block; }'],
 })
 export class AppComponent {

@@ -1,11 +1,11 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { TerminalCodeModule } from '../components/terminal-code/terminal-code.module';
+import { TerminalCodeComponent } from '@jaimemartinmartin15/jei-devkit-angular-shared';
 
 @Component({
   selector: 'app-host',
   standalone: true,
-  imports: [CommonModule, TerminalCodeModule],
+  imports: [CommonModule, TerminalCodeComponent],
   templateUrl: './host.component.html',
   styleUrls: ['./host.component.scss'],
 })

@@ -1,12 +1,11 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { TerminalCodeModule } from '../components/terminal-code/terminal-code.module';
-import { ImageFullScreenModule } from '../directives/image-full-screen/image-full-screen.module';
+import { ImageFullScreenModule, TerminalCodeComponent } from '@jaimemartinmartin15/jei-devkit-angular-shared';
 
 @Component({
   selector: 'app-nmap',
   standalone: true,
-  imports: [CommonModule, TerminalCodeModule, ImageFullScreenModule],
+  imports: [CommonModule, TerminalCodeComponent, ImageFullScreenModule],
   templateUrl: './nmap.component.html',
   styleUrls: ['./nmap.component.scss'],
 })

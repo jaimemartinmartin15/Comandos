@@ -6,19 +6,21 @@ Angular web page that explains terminal commands usage. Deployed to <https://jai
 
 ## Development
 
-Clone the repository:
+**Clone** the repository:
 
 ```text
 git clone https://github.com/jaimemartinmartin15/Comandos.git
 ```
 
-Install dependencies:
+**Install** dependencies:
 
 ```text
 npm i
 ```
 
-Start the server:
+You might need a valid personal access token to download some scoped dependencies on GPR (Github Package Registry).
+
+**Start** the server:
 
 ```text
 npm run start

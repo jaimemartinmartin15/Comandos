@@ -1,11 +1,11 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { TerminalCodeModule } from '../components/terminal-code/terminal-code.module';
+import { TerminalCodeComponent } from '@jaimemartinmartin15/jei-devkit-angular-shared';
 
 @Component({
   selector: 'app-if',
   standalone: true,
-  imports: [CommonModule, TerminalCodeModule],
+  imports: [CommonModule, TerminalCodeComponent],
   templateUrl: './if.component.html',
   styleUrls: ['./if.component.scss'],
 })
