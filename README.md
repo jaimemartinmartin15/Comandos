@@ -1,4 +1,4 @@
-# Comprende Rxjs
+# Comandos
 
 Angular web page that explains terminal commands usage. Deployed to <https://jaimeelingeniero.es/comandos>
 
